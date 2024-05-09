@@ -34,7 +34,7 @@ services:
 
   cli:
     container_name: cli
-    image: hyperledger/fabric-tools:2.3
+    image: hyperledger/fabric-tools:2.5
     tty: true
     stdin_open: true
     environment:
