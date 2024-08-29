@@ -4,7 +4,7 @@ set -e
 docker cp ../asset-transfer-basic/ cli:/opt/gopath/src/github.com/chaincode/
 
 # Empacotar chaincode
-docker exec cli peer lifecycle chaincode package asset-transfer-basic.tar.gz --path /opt/gopath/src/github.com/chaincode/asset-transfer-basic/chaincode-typescript --lang node --label basic
+docker exec cli peer lifecycle chaincode package asset-transfer-basic.tar.gz --path /opt/gopath/src/github.com/chaincode/asset-transfer-basic/chaincode-go --label basic
 
 #instalar chaincode no peer0.org1
 docker exec cli peer lifecycle chaincode install asset-transfer-basic.tar.gz
