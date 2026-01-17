@@ -1,0 +1,4 @@
+# Ignore local tooling / ops folders
+HLF-Batch-Scripts/
+monitor_adv/
+explorer/
